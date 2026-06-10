@@ -1,0 +1,32 @@
+[gd_scene format=3 uid="uid://bwnwoomacssjn"]
+
+[ext_resource type="Theme" uid="uid://okygipyq1duy" path="res://assets/themes/MenuButton.tres" id="1_xqga4"]
+
+[node name="Main Menu" type="Control" unique_id=614746840]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="CenterContainer" type="CenterContainer" parent="." unique_id=476677069]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer" unique_id=872494283]
+layout_mode = 2
+
+[node name="Play" type="Button" parent="CenterContainer/VBoxContainer" unique_id=1807745547]
+layout_mode = 2
+theme = ExtResource("1_xqga4")
+text = "Play"
+
+[node name="Quit" type="Button" parent="CenterContainer/VBoxContainer" unique_id=1789723479]
+layout_mode = 2
+theme = ExtResource("1_xqga4")
+text = "Quit"

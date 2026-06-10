@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://bwnwoomacssjn"]
 
+[ext_resource type="Script" uid="uid://bfhti2rgcmn3j" path="res://scripts/menus/main_menu.gd" id="1_ovrgc"]
 [ext_resource type="Theme" uid="uid://okygipyq1duy" path="res://assets/themes/MenuButton.tres" id="1_xqga4"]
 
 [node name="Main Menu" type="Control" unique_id=614746840]
@@ -9,6 +10,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_ovrgc")
 
 [node name="CenterContainer" type="CenterContainer" parent="." unique_id=476677069]
 layout_mode = 1
@@ -30,3 +32,5 @@ text = "Play"
 layout_mode = 2
 theme = ExtResource("1_xqga4")
 text = "Quit"
+
+[connection signal="pressed" from="CenterContainer/VBoxContainer/Quit" to="." method="_on_quit_pressed"]

@@ -16,16 +16,9 @@ compatibility/default_parent_skeleton_in_mesh_instance_3d=true
 
 config/name="Tread Lightly"
 config/version="1.0"
-run/main_scene="uid://8ijkfe8i4be7"
+run/main_scene="uid://c35g4ccaiqwj8"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://assets/icon.svg"
-
-[autoload]
-
-Backend="*res://scripts/backend.gd"
-Global="*res://scripts/global.gd"
-PauseHandler="*res://scripts/menus/pause_handler.gd"
-GameState="*res://scripts/gamestate.gd"
 
 [display]
 
@@ -34,13 +27,6 @@ window/size/viewport_height=1080
 window/size/mode=2
 window/stretch/mode="canvas_items"
 display_server/size/viewport_width=1152
-
-[global_group]
-
-gameplay=""
-lights=""
-enemies=""
-player=""
 
 [input]
 
